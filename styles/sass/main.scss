@@ -1,0 +1,17 @@
+$color:#dd55ff/3;
+
+
+body{
+	background-color: $color;
+}
+
+li{
+	background-color:$color;
+}
+
+.coponent__navigation{
+	a{
+		&:hover{
+			background-color:red;
+		}
+	}

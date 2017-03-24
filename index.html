@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--   jquery plugin -->
+  <script  src ="scripts/jquery-3.1.0.min.js" ></script>
+
+  <title>HTML and SASS Template for Experimenting Code</title>
+  <meta name="description" content="This is a blank HTML and SASS template for experimenting code">
+  <meta name="author" content="baboucarr - tixibit.com">
+
+  <!-- normalize CSS Project -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel="stylesheet" href="styles/css/main.css">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <!-- TODO CODE BELOW THIS LINE -->
+
+
+<!-- form for user creating an account -->
+
+<fieldset>
+
+  <legend>
+  <h3>Create Account</h3>
+ </legend>
+
+
+
+
+ <div class="form-data">
+    <label for="email">Email</label>
+    <input    name = "" id="email" type="email" class="input" placeholder="" required>
+ </div>
+
+
+ <div class="form-data">
+   <label for="password">Password</label>
+   <input name="" id="password"   type="password"  class="input" placeholder="" required>
+ </div>
+
+
+
+  <div class="form-data">
+    <input class="btn btn--submit" type="submit" value="Create account">
+  </div>
+</fieldset>
+<!--
+ fieldset for the login form -->
+
+ <fieldset>
+
+<legend>
+  <h3>Login</h3>
+</legend>
+
+
+   <div class="form-data">
+      <label for="email">Email</label>
+      <input  name="" id="email" type="email" class="input"   required>
+    </div>
+
+    <div class="form-data">
+      <label for="password">Password</label>
+      <input  name="" id="password" type="password" class="input" required>
+    </div>
+
+    <div class="form-data">
+      <input class="btn btn--submit" type="submit" value="Login">
+    </div>
+
+    <div class="form-data">
+      <input class="btn btn--submit" type="submit" value="Rest Password">
+    </div>
+
+ </fieldset>
+
+ <!--
+  persona details -->
+  <fieldset>
+
+    <legend><h3>Personal Details</h3></legend>
+
+    <div class="form-data">
+
+      <label for="firstname">FirstName</label>
+      <input  name="firstname" id="firstname"  type="text" required>
+
+    </div>
+
+    <div class="form-data" >
+
+      <label for="lastname">LastName:</label>
+      <input  name="lastname" id="lastname"  type="text" required>
+
+    </div>
+
+    <div>
+        <label for="gender">Gender:</label>
+
+      <select name="gender" id="gender" required>
+
+        <option value="">Male:</option>
+        <option value="">Female:</option>
+
+
+      </select>
+
+
+    </div>
+
+    <div class="form-data">
+
+      <label for="nationality">Nationality</label>
+      <input  name="nationality" id="nationality" type="text"  required>
+
+    </div class= "form-data">
+
+    <div class="form-data">
+
+       <label for="phonenumber">Phone Number</label>
+      <input  name="phonenumber" type="text" id="phonenumber" required>
+
+    </div>
+
+    <div class="form-data">
+
+      <label for="location">Current Address:</label>
+      <input name="location" id="location" type="text" required>
+
+    </div>
+
+
+  </fieldset>
+<!--
+      education background -->
+  <fieldset>
+    <legend><h3>Educational Background </h3> </legend>
+
+    <div class="form-data">
+
+      <label for="from">From:</label>
+      <input  name="from" type="text" id="from" placeholder="" required>
+
+    </div>
+
+    <div class="form-data">
+
+      <label for="school">School:</label>
+      <input name="school" type="text" id="school" placeholder="" required>
+
+    </div>
+
+    <div class="form-data">
+
+      <label for="to">To:</label>
+      <input name="to" type="text" id="to" placeholder="" required>
+
+    </div>
+
+
+  </fieldset>
+
+
+
+<!--
+    fieldset for the guardian details -->
+    <fieldset>
+<legend>
+  <h3>Guardian Details</h3>
+</legend>
+
+      <div class="form-data">
+      <label for="firstName"> FirstName </label>
+      <input name = ""   id = "firstName" type = "text" class = "input" required>
+      </div>
+
+     <div class = "form-data">
+        <label for = "lastName"> LastName </label>
+        <input name = "" id = "lastName"  type = "text" class = "input"   required>
+     </div>
+
+     <div class = "form-data">
+       <label for = "phoneNumber">Phone</label>
+       <input  name=""  id = " phoneNumber" type="text" class = "input" required>
+     </div>
+
+     <div class="form-data">
+       <label for = "address">Address</label>
+       <input name="" id="address"  type = "text" class = "input"   required>
+     </div>
+
+     <div class="form-data">
+       <label for="relationship">Relationship With Student</label>
+       <input name="" id="relationship" type="text" class= "input"   required>
+     </div>
+
+     <div class="form-data">
+       <input class="btn btn--submit" type="button" value="save">
+     </div>
+
+    </fieldset>
+
+     <!-- Employement-->
+    <fieldset>
+
+    <legend>
+      <h3>Employement</h3>
+    </legend>
+
+
+      <p>Have you ever been employed</p>
+
+      <div class="form-data">
+
+         <label for="yes">Yes</label>
+         <input name="" id="yes" type="radio">
+      </div>
+
+       <div class="form-data">
+
+         <label for="no">No</label>
+        <input name="" id="no" type="radio">
+
+      </div>
+
+
+    <div class="visually-hidden">
+
+       <div class="form-data">
+
+        <label for="institution">Institution Name</label>
+        <input  name="" id="institution" type="text">
+
+      </div>
+
+       <div class="form-data">
+
+        <label for="from">From </label>
+        <input  name="" id="from" type="text">
+
+      </div>
+
+      <div class="form-data">
+
+         <label for="to">To</label>
+         <input  name="" id="to" type="">
+
+      </div>
+    </div>
+
+
+     <div class="input-fields" id="click">
+       <button id="new" class="btn" > Add Employement Details </button>
+    </div>
+
+
+    </fieldset>
+    <!-- End of Employement-->
+
+
+    <!-- Start of Field Of Study-->
+    <fieldset>
+
+
+      <legend>
+        <h3>Field Of Study</h3>
+      </legend>
+
+      <div class="form-data">
+
+         <label for="field__of__study">Field of Study</label>
+          <select  name="" id="field__of__study">
+          <option value="Computer Science">Computer Science</option>
+          <option value="Mathematic">Mathematics</option>
+          <option value="Econmics">Econmics</option>
+          <option value="Law">Law</option>
+        </select>
+
+      </div>
+
+    </fieldset>
+    <!-- End fo field of Study-->
+
+
+ <!--   field set to add documents -->
+   <fieldset>
+
+
+
+  <legend>
+  <h3>Upload Documents</h3>
+  </legend>
+
+
+  <label for="upload"></label>
+
+    <div class="form-data" id="items">
+      <input  name="" type="file" class="input">
+    </div>
+
+    <div class="input-fields" id="click">
+       <button id="add" class="btn" > Add More Docuemtns </button>
+    </div>
+
+  </fieldset>
+
+</body>
+</html>
+<script  src= "scripts/main.js"></script>
+
+
